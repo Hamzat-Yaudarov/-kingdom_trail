@@ -1,0 +1,22 @@
+{
+  "name": "kingdom-trail",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w @kingdom-trail/server\" \"npm run dev -w @kingdom-trail/web\"",
+    "build": "npm run build -w @kingdom-trail/shared && npm run build -w @kingdom-trail/bot && npm run build -w @kingdom-trail/web && npm run build -w @kingdom-trail/server",
+    "start": "npm run start -w @kingdom-trail/server",
+    "set:webhook": "npm run set-webhook -w @kingdom-trail/server",
+    "typecheck": "npm run typecheck -ws",
+    "clean": "rimraf apps/*/dist packages/*/dist"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

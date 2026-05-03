@@ -1,0 +1,26 @@
+export const en = {
+  appName: 'Kingdom Trail',
+  openGame: 'Open Game',
+  start: 'Start',
+  build: 'Build',
+  upgrade: 'Upgrade',
+  collect: 'Collect',
+  available: 'Available',
+  underConstruction: 'Under Construction',
+  resources: {
+    wood: 'Wood',
+    stone: 'Stone',
+    food: 'Food',
+    diamonds: 'Diamonds',
+  },
+  buildings: {
+    castle: { name: 'Castle', description: 'The main base building that unlocks progression and new structures.' },
+    sawmill: { name: 'Sawmill', description: 'Produces wood for your early growth.' },
+    quarry: { name: 'Quarry', description: 'Produces stone and becomes a midgame bottleneck.' },
+    farm: { name: 'Farm', description: 'Produces food for your settlement.' },
+    barracks: { name: 'Barracks', description: 'A military progression building.' },
+    shooting_range: { name: 'Shooting Range', description: 'A training ground for ranged units.' },
+    stable: { name: 'Stable', description: 'A late-game building for stronger progression gates.' },
+    laboratory: { name: 'Laboratory', description: 'A special building tied to late-game castle upgrades.' },
+  },
+} as const

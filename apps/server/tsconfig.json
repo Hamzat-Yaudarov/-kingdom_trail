@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "paths": {
+      "@kingdom-trail/shared": [
+        "../../packages/shared/src/index.ts"
+      ],
+      "@kingdom-trail/bot": [
+        "../bot/src/index.ts"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ]
+}

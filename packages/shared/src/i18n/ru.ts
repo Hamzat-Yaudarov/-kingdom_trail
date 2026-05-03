@@ -1,0 +1,26 @@
+export const ru = {
+  appName: 'Kingdom Trail',
+  openGame: 'Открыть игру',
+  start: 'Старт',
+  build: 'Построить',
+  upgrade: 'Улучшить',
+  collect: 'Собрать',
+  available: 'Доступно',
+  underConstruction: 'Строится',
+  resources: {
+    wood: 'Дерево',
+    stone: 'Камень',
+    food: 'Еда',
+    diamonds: 'Алмазы',
+  },
+  buildings: {
+    castle: { name: 'Замок', description: 'Главное здание базы. Открывает прогресс и новые постройки.' },
+    sawmill: { name: 'Лесопильня', description: 'Производит дерево для раннего развития.' },
+    quarry: { name: 'Каменоломня', description: 'Добывает камень и тормозит midgame-прогресс.' },
+    farm: { name: 'Ферма', description: 'Производит еду для развития поселения.' },
+    barracks: { name: 'Казарма', description: 'Прогрессионное военное здание.' },
+    shooting_range: { name: 'Стрельбище', description: 'Тренировочная площадка для дальнего боя.' },
+    stable: { name: 'Конюшня', description: 'Позднее здание для сильного прогресса.' },
+    laboratory: { name: 'Лаборатория', description: 'Особое здание для late-game требований.' },
+  },
+} as const

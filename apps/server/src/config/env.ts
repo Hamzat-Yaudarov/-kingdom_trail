@@ -23,7 +23,7 @@ const envSchema = z.object({
   TELEGRAM_BOT_USERNAME: z.string().min(1),
   TELEGRAM_WEBHOOK_SECRET: z.string().min(1),
   SUPABASE_URL: z.string().url(),
-  SUPABASE_ANON_KEY: z.string().min(1),
+  SUPABASE_ANON_KEY: z.string().default(''),
   SUPABASE_SERVICE_ROLE_KEY: z.string().min(1),
   SUPABASE_PROJECT_ID: z.string().min(1),
   JWT_SECRET: z.string().min(1),

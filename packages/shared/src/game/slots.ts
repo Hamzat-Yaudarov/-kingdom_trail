@@ -1,4 +1,4 @@
-import type { BuildingType } from './building-types'
+import type { BuildingType } from './building-types.js'
 
 export type SlotId =
   | 'castle_slot'

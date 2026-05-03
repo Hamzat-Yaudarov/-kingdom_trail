@@ -1,4 +1,4 @@
-import type { ResourceCosts } from './resource-types'
+import type { ResourceCosts } from './resource-types.js'
 
 export const MAX_BUILDING_LEVEL = 9
 export const RESOURCE_CAP_HOURS = 8

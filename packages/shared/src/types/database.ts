@@ -1,5 +1,5 @@
-import type { BuildingType } from '../game/building-types'
-import type { Language, PlayerResources } from './game-state'
+import type { BuildingType } from '../game/building-types.js'
+import type { Language, PlayerResources } from './game-state.js'
 
 export type PlayerRow = {
   id: string

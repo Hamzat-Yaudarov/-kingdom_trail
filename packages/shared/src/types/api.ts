@@ -1,4 +1,4 @@
-import type { GameState, Language } from './game-state'
+import type { GameState, Language } from './game-state.js'
 
 export type TelegramAuthRequest = {
   initData: string

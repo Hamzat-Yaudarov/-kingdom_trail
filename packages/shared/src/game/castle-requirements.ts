@@ -1,4 +1,4 @@
-import type { BuildingType } from './building-types'
+import type { BuildingType } from './building-types.js'
 
 export type CastleRequirement = Partial<Record<Exclude<BuildingType, 'castle'>, number>>
 

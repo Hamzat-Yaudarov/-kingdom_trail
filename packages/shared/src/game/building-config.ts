@@ -1,7 +1,7 @@
-import type { BuildingType } from './building-types'
-import { hours, minutes, ZERO_COSTS } from './economy'
-import type { ResourceCosts, ResourceType } from './resource-types'
-import type { SlotId } from './slots'
+import type { BuildingType } from './building-types.js'
+import { hours, minutes, ZERO_COSTS } from './economy.js'
+import type { ResourceCosts, ResourceType } from './resource-types.js'
+import type { SlotId } from './slots.js'
 
 export type BuildingLevelData = {
   cost: ResourceCosts

@@ -1,5 +1,5 @@
-import type { BuildingType } from '../game/building-types'
-import type { ResourceType } from '../game/resource-types'
+import type { BuildingType } from '../game/building-types.js'
+import type { ResourceType } from '../game/resource-types.js'
 
 export type Language = 'ru' | 'en'
 export type SlotState = 'locked' | 'available' | 'building' | 'built'

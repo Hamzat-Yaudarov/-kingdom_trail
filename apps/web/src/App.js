@@ -68,6 +68,18 @@ function getApiBaseUrl() {
     }
     return '';
 }
+async function waitForTelegramInitData() {
+    const maxAttempts = 20;
+    const delayMs = 150;
+    for (let attempt = 0; attempt < maxAttempts; attempt += 1) {
+        const initData = window.Telegram?.WebApp?.initData;
+        if (initData) {
+            return initData;
+        }
+        await new Promise((resolve) => window.setTimeout(resolve, delayMs));
+    }
+    return window.Telegram?.WebApp?.initData || '';
+}
 async function fetchJson(url, init) {
     const response = await fetch(url, {
         ...init,
@@ -147,7 +159,7 @@ export function App() {
     const authQuery = useQuery({
         queryKey: ['auth'],
         queryFn: async () => {
-            const initData = window.Telegram?.WebApp?.initData;
+            const initData = await waitForTelegramInitData();
             if (initData) {
                 return fetchJson(`${apiBaseUrl}/api/auth/telegram`, {
                     method: 'POST',
